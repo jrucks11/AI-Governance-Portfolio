@@ -1,0 +1,13 @@
+#GitHub Copilot
+Platform Overview
+
+What is it?
+GitHub Copilot is an AI-powered coding assistant made by GitHub. It essentially assists developers in writing code faster and more accurately. It's core capabilites include: Code completions, CHat assistant, Agentic workflows, Planning.
+What does it do?
+A conversational chat assistant that provides real-time code completions as you type that can plan and execute development tasks autonomously in the background.
+Who would use it?
+Software developers, as well as Business and Enterprise tiers for organizations. The platform also integrates into popular code editors like Visual Studio Code, Visual Studio, and JetBrains IDEs.
+What business problem does it solve?
+Developer productivity. Copilot reduces all of the issuses by keeping developers in flow, cutting time spent on routine code, accelerating code reviews, and enabling AI agents to handle background tasks autonomously.
+What integrations exist?
+Copilot is available as an extension in Visual Studio Code, Visual Studio Vim, Neovim, Azure Data Studio. Its Extensions framework connects it to third-party tools like GitBook, ReadMe API, DataStax, Docker, and Perplexity AI, allowing developers to query documentation, manage issues, and interact with external systems without leaving their editor. It also integrates with GitHub mobile on IOS and Android.
