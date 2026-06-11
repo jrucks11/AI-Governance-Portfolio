@@ -44,3 +44,89 @@ Potential Impact:
 Liklihood: Medium 
 
 Proposed Mitigation: 
+-Conduct legal review of AI usage policies
+-Ensure enterprise data prossessing agreements are in place with GitHub/Microsoft 
+-Include CoPilot usage in your annual compliance audit
+
+Risk Owner: Legal, Compliance Officer
+--------------------------------------------------
+Third-Party Vendor Risk: Organizations adopting CoPilot become dependent on a vendor that can change pricing, restrict access, or experience outages. There is also limited transparency into how the underlying models are trained, updated, or changed over time.
+
+Potential Impact: 
+-Service Disruption
+-Unexpected cost increases
+-forced migration to alternative tools
+-Loss of developer productivity 
+
+Liklihood: Medium 
+
+Proposed Mitigation:
+-Monitor GitHub's changelog for policy changes
+-maintain internal documentation so developers can work without CoPilot if needed
+-Periodically benchmark tools
+
+Risk Owner: VP of Engineering
+-------------------------------------------------
+Data Protection Risk: When CoPilot processes code, that property is transmitted to and processed on Microsoft-owned infrastructure. Without enterprise-level controls, there is risk that code is retained, logged, or used in model training.
+
+Potential Impact: 
+-Loss of competitive advantage
+-IP theft exposure
+-Breach of contract obligations with clients
+
+Liklihood: Medium
+
+Proposed Mitigation: 
+-Use only CoPilot Business or Enterprise plans
+-Restrict CoPilot to non-sensitive repositories 
+-Classify repositories by sensitivity level
+
+Risk Owner: CISO, Data Protection Officer
+-------------------------------------------------
+Human Oversight Risk: Developers may form an over-reliance on AI suggestions, accepting code they don't fully understand.This creates systems that no one on the team can fully explain or maintain.
+
+Potential Impact: 
+-Degrading code quality
+-Increased technical debt
+-production incidents 
+
+Liklihood: High
+
+Proposed Mitigation:
+-Mandatory human code review for all AI-assisted code
+-Invest in developer education programs
+-Use CoPilot as a tool to accelerate engineering judgement
+
+Risk Owner: Engineering Managers, Tech Leads
+------------------------------------------------
+Operational Risk: CoPilot has become deeply embedded in many engineering teams daily workflows. Any unplanned outage, forced plan migration, or sudden feature deprecation reduces engineering throughout.
+
+Potential Impact:
+-Reduced developer output
+-Unplanned cost overruns
+-Workflow disruption during platform changes
+
+Liklihood: Medium
+
+Proposed Mitigation:
+-Set montly AI credit budgets and alerts
+-Include CoPilot in business planning 
+-Assign an internal owner to monitor GitHub platform updates
+
+Risk Owner: Engineering Operations, Finance
+------------------------------------------------
+Reputational Risk: If AI-generated code causes a significant production failure, data breach, or ships functionality with embedded bias, the organization holds reputational responsibility. 
+
+Potential Impact:
+-Loss of customer trust
+-Negative media coverage
+-Partner and investor concerns 
+
+Liklihood: Low/Medium
+
+Proposed Mitigation: 
+-Publish an internal and external AI usage policy
+-Establish accountability frameworks for AI-assisted development decisions
+-Spokesperson responsible for responding to AI-related questions from customers
+
+Risk Owner: CEO, Executive Leadership, Communications Team
