@@ -1,0 +1,46 @@
+CoPilot Risk Assessment
+
+Security Risk: CoPilot sends code to external cloud servers to formulate suggestions, hardcoded credentials, and API keys. CoPilot also frequently suggests code patterns that are outdated, insecure, or from vulnerable source examples. there is the risk of prompt injection attacks if CoPilot is connected to external tools through MCP injections. 
+
+Potential Impact:
+- Security breach 
+-system compromise 
+-exposed credentials 
+-regulatory penalties 
+-financial loss do to vunerable code shipping 
+Likelihood: High
+
+Proposed Mitigation:
+-Implement secrets detection pre-commit hooks
+-Mandatory peer review of all AI-generated code 
+-Implement GitHub advanced security scanning on all repositories
+
+Risk Owner: CISO, Security Engineering Team
+--------------------------------------------------
+Privacy Risk: Developers working with real customer data, user records, or PII in test files, and comments may expose that data to CoPilot's cloud processing. The risk of accidental PII transmission exists if developers don't follow clean data practices.
+
+Potential Impact: 
+-Regulatory fines
+-breach of customer trust
+-legal liability under data protection laws
+
+Likelihood: Medium
+
+Proposed Mitigation: 
+-Implement a policy restricting real customer data in development environments
+-Use synthetic test data
+-Conduct privacy impact assessments annually
+
+Risk Owner: Data Protection Officer, Legal Team
+--------------------------------------------------
+Compliance Risk: Organizations operating in regulated industries (healthcare, fincance, or government) show compliance risks when using cloud-based AI tools that process code containing regulated information. 
+
+Potential Impact: 
+-Regulatory sanctions
+-failed audits
+-licensing disputes 
+-potential litigation
+
+Liklihood: Medium 
+
+Proposed Mitigation: 
