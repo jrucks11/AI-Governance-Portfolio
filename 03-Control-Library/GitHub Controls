@@ -7,3 +7,52 @@ Category: Access Control
 The IT/Security team implements COP-01 by restricting GitHub CoPilot seat assignments exclusively to developers who have submitted an approved access request through the IT service management system. The organization uses GitHub Enterprise Admin Center to provision and deprovision CoPilot seats, tied directly to role-based eligibility. This occurs at the time of onboarding, role change, or upon an approved request. Results are reviewed by the IT Manager and Security team on a quarterly basis to identify and remove unused or unauthorized seats. Evidence includes GitHub Enterprise seat assignment reports, access request tickets, quarterly access review sign-off documentation, and offboarding checklists confriming seat revocation.
 
 this maps directly to NIST SP 800-53 AC-2
+-------------------------------------------
+Control ID: COP-02
+Control Name: Privileged Access for CoPilot Admins
+Category: Access Management
+
+The Security Team implements COP-02 by limiting GitHub CoPilot admin rights to a designated group of GitHub Enterprise administrators. The organization uses GitHub role-based permissions to seperate admin from standard user access. This occurs at initial setup and reviewed annually. Results are reviewed by the CISO. Evidence includes admin role assignment logs and access review sign-offs.
+
+NIST 800-53 AC-6 - Least Privilege
+-------------------------------------------
+Control ID: COP-03
+Control Name: CoPilot Access Revocation on Termination
+Category: Access Management 
+
+The HR Team implements COP-03 by ensuring CoPilot seat revocation is included in the employee offboarding checklist within 24 hours of termination. The organization uses automated deprovisioning tied to HR system triggers where possible. This occurs upon every employee or contractor seperation. Results are reviewed by IT Security monthly. Evidence includes offboarding tickets, seat revocation confirmation logs, and HR termination records.
+
+NIST 800-53: PS-4 - Personnel Termination
+-------------------------------------------
+Control ID: COP-04
+Control Name: Data Sharing Opt-Out
+Category: Data Protection
+
+The Security Team implements COP-04 by disabling GitHub's use of organizational code for AI model training through enterprise policy settings. The organization uses GitHub Enterprise policy controls to enforce opt-out across all users. This occurs at initial platform configuration. Results are reviewed by Legal and Privacy teams annually. Evidence includes GitHub enterprise policy screenshots and DPA confirmation from GitHub.
+
+NIST 800-53: SI-12 - Information Management and Retention
+-------------------------------------------
+Control ID: COP-05
+Control Name: Source Code Exclusion Policy
+Category: Data Protection
+
+The Securitty Team implements COP-05 by configuring CoPilot content exclusions to block suggestions from repositories containing senstive data, PII, or regualted infromation. The organization uses GitHub at the enterprise level. This occurs at initial deployment and reviewed quarterly by the Data Protection Officer. Evidence includes content exclusion configuration exports nad repository classification records.
+
+NIST 800-53: SC-28 - Protection of Information at Rest
+-------------------------------------------
+Control ID: COP-06
+Control Name:AI Output Accountability Policy
+Category: Human Oversight
+
+The AI Governance team implements COP-06 by establishing a policy that developers are fully accountable for any CoPilot-generated code they accept and commit. The organization uses developer policy acknowledgment and onbaording training to enforce this standard. This occurs at CoPilot onboarding and annually. Results are reviewed by the AI Governance Lead. Evidence includes signed policy acknowledgments and training completion records.
+
+NIST 800-53: PL-4 Rules of Behavior
+-------------------------------------------
+Control ID: COP-07
+Control Name: Mandatory Review of AI-Generated Code
+Category: Human Oversight
+
+Engineering Lead implements COP-07 by requiring all CoPilot-assisted code to pass at least one human peer review before merging into protected branches. The organization uses GitHub branch protection rules with required reviewers enforced at the repository level. This occurs on every pull request. Results are reviewed by Engineering Managers monthly. Evidence includes PR approval history, branch protection rule configurations, and merge logs.
+
+NIST 800-53: SA-11 - Developer Testing and Evaluation
+-------------------------------------------
