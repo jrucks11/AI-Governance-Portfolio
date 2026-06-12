@@ -1,0 +1,9 @@
+GitHub CoPilot Controls
+
+Control ID: COP-01
+Control Name: CoPilot Seat Assignments 
+Category: Access Control
+
+The IT/Security team implements COP-01 by restricting GitHub CoPilot seat assignments exclusively to developers who have submitted an approved access request through the IT service management system. The organization uses GitHub Enterprise Admin Center to provision and deprovision CoPilot seats, tied directly to role-based eligibility. This occurs at the time of onboarding, role change, or upon an approved request. Results are reviewed by the IT Manager and Security team on a quarterly basis to identify and remove unused or unauthorized seats. Evidence includes GitHub Enterprise seat assignment reports, access request tickets, quarterly access review sign-off documentation, and offboarding checklists confriming seat revocation.
+
+this maps directly to NIST SP 800-53 AC-2
