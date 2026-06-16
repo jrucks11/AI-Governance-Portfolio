@@ -41,7 +41,7 @@ The Securitty Team implements COP-05 by configuring CoPilot content exclusions t
 NIST 800-53: SC-28 - Protection of Information at Rest
 -------------------------------------------
 Control ID: COP-06
-Control Name:AI Output Accountability Policy
+Control Name: AI Output Accountability Policy
 Category: Human Oversight
 
 The AI Governance team implements COP-06 by establishing a policy that developers are fully accountable for any CoPilot-generated code they accept and commit. The organization uses developer policy acknowledgment and onbaording training to enforce this standard. This occurs at CoPilot onboarding and annually. Results are reviewed by the AI Governance Lead. Evidence includes signed policy acknowledgments and training completion records.
@@ -56,3 +56,66 @@ Engineering Lead implements COP-07 by requiring all CoPilot-assisted code to pas
 
 NIST 800-53: SA-11 - Developer Testing and Evaluation
 -------------------------------------------
+Control ID: COP-08
+Control Name: CoPilot Usage Reporting
+Category: Monitoring
+
+The IT Team implements COP-08 by producing a monthly CoPilot usage reporting summarizing active users, seat utilization, policy violations, and flagged events for leadership review. The organization uses GitHub Enterprise usage dashboards and SIEM exports to compile the report. This occurs monthly. Results are reviewed by the CISO and IT Director. Evidence includes monthly report artifacts, distribution records, and leadership acknowledgment.
+
+NIST 800-53: AU-6 - Audit Record Review Analysis
+-------------------------------------------
+Control ID: COP-09
+Control Name: Data Processing Agreement Review
+Category: Third-Party Risk
+
+The Legal team implements COP-09 by ensuring a current Data Processing Agreement (DPA) with GitHub is executed and covers CoPilot's AI data handling obligations before platform approval. The organization uses a contract management system to track DPA status and renewal dates. This occurs before go-live and at each contract renewal. Results are reviewed by the DPO. Evidence includes signed DPA, contract management records, and legal sign-off.
+
+NIST 800-53: SA-4 - Aquisition Process
+-------------------------------------------
+Control ID: COP-10
+Control Name: AI Bias and Output Quality Review
+Category: Responsible AI
+
+The Engineering team implements COP-10 by sampling CoPilot suggestions across repositories to assess output quality, potential bias in code patterns, and adherence to secure coding standards. The organization uses manual sampling and static analysis tooling to evaluate suggestion quality. This occurs quarterly. Results are reviewed by the AI Governace committee. Evidence includes sampling reports, static analysis results, and committee review records.
+
+NIST 800-53: SI-7 - Software, Firmware, and Information Integrity
+-------------------------------------------
+Control ID: COP-11
+Control Name: Developer AI Literacy Training 
+Category: Responsible AI
+
+The AI Governace team implements COP-11 by requiring all CoPilot users to complete AI Literacy Training covering responsible use, limitations of AI-generated code, and security risks before seat activation. The organization uses an LMS to assign, track, and enforce training completion. This occurs before initial access and annually. Results are reviewed by the AI Governance lead. Evidence includes LMS completion records, training content documentation, and seat provisioning confirmation.
+
+NIST 800-53: AT-2 - Literacy Training and Awareness
+-------------------------------------------
+Control ID: COP-12
+Control Name: CoPilot-Related Security Event Reporting 
+Category: Incident Response 
+
+Developers implement COP-12 by reporting any suspected AI-generated code vulnerability, data leak, or policy violation through the organization's established security incident reporting channel within 24 hours of discovery. The organization uses the ITSM ticketing system with an AI-specific incident category to capture and route reports. This occurs upon discovery of any qualifying event. Results are reviewed by the IR team. Evidence includes incident tickets, response timelines, and resolution records.
+
+NIST 800-53: IR-6 - Incident Reporting
+-------------------------------------------
+Control ID: COP-13
+Control Name: Regulatory Applicability Assessment
+Category: Compliance and Regulatory Requirements
+
+The Compliance team implements COP-13 by conducting a pre-deployment regulatory applicability assessment to determine which data protection and AI regulations apply to CoPilot use. The organization uses a compliance matrix mapped to CoPilot's data flows. This occurs before go-live and reviewed annually. Results are reviewed by the General Counsel. Evidence includes the completed assessment, compliance matrix, and legal sign-off.
+
+NIST 800-53: PL-1 - Policy and Procedures
+-------------------------------------------
+Control ID: COP-14
+Control Name: AI Feature Enablement Approval Process
+Category: Model Governance
+
+The AI Governance team implements COP-14 by requiring formal risk assessment and approval before enabling new or experimental CoPilot features beyond the approval baseline. The organization uses a lightweight AI feature approval workflow in the ITSM platform. This occurs before any new feature is activated in the production environment. Results are reviewed by the CISO and AI Governance lead. Evidence includes feature approval requests, risk assessments, and approval records.
+
+NIST 800-53: CM-4 - Impact Analyses
+-------------------------------------------
+Control ID: COP-15
+Control Name: User Communication for CoPilot Updates
+Category: Change Management
+
+The Engineering team implements COP-15 by notifying all CoPilot users of material platform updates, policy changes, or new feature activations at least 5 business days in advance. The organization uses internal communication channels (email,Slack) to distribute change notices. This occurs before every material change. Results are reviewed by Engineering Leadership. Evidence includes communication records, distribution lists, and acknowledgment logs.
+
+NIST 800-53: CM-3(7) Configuration Change Control/ Review System Changes
