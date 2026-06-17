@@ -1,0 +1,42 @@
+ Platform Name: 
+GitHub CoPilot (Enterprise)
+
+ Vendor:
+GitHub, Inc 
+
+ Business Owner:
+Engineering
+
+ Technical Owner:
+AI Sceurity Engineer 
+
+ Platform Purpose:
+GitHub CoPilot is an AI pair-programming tool that generates code suggestions, autocompletions, and chat-based development assistance directly within the IDE. It solves the problem of developer productivity issues by context-switching, and assisting with debugging. Capabilities include inline code suggestions, natural language-to-code generation, and chat-based Q&A on codebases. It will be used by software engineers, DevOps engineers, and QA automation engineers. 
+
+ Intended Use:
+-Software development assistance
+-Debugging and error explanation
+-Unit test generation
+-Code documentation assistance
+
+ Prohibited Use:
+-Generating code for production cryptographic or authentication modules without senior security review.
+-Uploading regulated data (PII, PHI, PCI) into CoPilot Chat prompts
+-Using CoPilot suggestions in safety-critical systems without full human validation
+-Bypassing mandatory peer code review for CoPilot-generated code
+
+ Data Considerations:
+Permitted Data: Internal source code, non-sensitive technical documentation, public/open-source code references
+
+Restricted Data: Customer PII, Regulated data (HIPAA, PCI-DSS, GDPR-covered data), proprietary algorithms designated as trade secrets
+
+Governance Requirements: Enterprise-level content exclusion policies enforced; training data sharing disabled via enterprise admin settings; data classification labels enforced at the repository level
+
+ Key Risks:
+-Data leakage via CoPilot Chat prompts
+-Hallucinated or insecure code suggestions
+-Intellectual property/license contamination from training data
+-Over-reliance reducing developer code comprehension
+-Unathorized seat access by terminated employees
+
+ Required Controls:
