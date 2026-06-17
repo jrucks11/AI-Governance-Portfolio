@@ -40,3 +40,24 @@ Governance Requirements: Enterprise-level content exclusion policies enforced; t
 -Unathorized seat access by terminated employees
 
  Required Controls:
+COP-05: Source Code Exclusion Policy
+COP-07: Mandatory Review of AI Generated Code
+COP-03: CoPilot Access Revocation on Termination
+COP-01: CoPilot Seat Assignments 
+COP-06: AI Output Accountability Policy
+COP-09: Data Processing Agreement Review
+
+ Human Oversight Requirements:
+All CoPilot-generated code must pass human peer review before merge. Code touching authentication, cryptography, or payment processing requires senior/ security review via CODEOWNERS enforcement. No autonomous merge or deployment of AI-generated code is permitted.
+
+ Monitoring Requirements:
+-Quarterly access and seat reviews
+-Weekly SIEM/audit log review for anomalous usage
+-Monthly usage reporting to Engineering leadership
+-Annual vendor risk assessment
+
+ Approval Recommendation:
+Approve with Conditions
+
+ Justification:
+The Platform Assessment confirms strong alignment between CoPilot's capabilities and a clear engineering producitvity need. The Risk Assessment identifies manageable risks (data leakage, insecure suggestions) that are mitigated through enterprise-level content exclusions, mandatory human code review, and audit logging already supported natively by GitHub Enterprise. Given the existing maturity of access control and monitoring infrastructure, approval is appropriate provided the listed controls remain continuously enforced and quarterly reviews are performed.
