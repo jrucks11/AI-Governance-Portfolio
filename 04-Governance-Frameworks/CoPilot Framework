@@ -1,0 +1,11 @@
+04-Governance-Framework
+
+Section 1: Executive Summary
+ This framework governs the organization's use of GitHub CoPilot, an AI-powered coding assistant developed by GitHub (Microsoft) that integrates directly into developer environments including Visual Studio Code, Visual Studio, JetBrains IDEs, Neovim, and the GitHub mobile application. CoPilot uses large language models trained on public and licensed code to suggest, generate, and explain code as developers write it. It can complete single lines or entire functions, answer natural-language questions about a codebase, generate tests, and independently carry out scoped engineering tasks with minimal developer supervision. CoPilot is being adopted to improve developer productivity and reduce time spent on routine, boilerplate, and repetitive coding tasks, allowing engineers to stay in flow, accelerate code review cycles, and offload well-defined background tasks to AI agents.
+
+Section 2: Governance Structure (RACI)
+
+Role:                    Responsibility:
+Business Ownwer          Owns the business use case for CoPilot; justifies the productivity need, sponsors the budget, and accepts residual                               business risk.
+
+AI Governance Lead       Chairs overall governance oversight; coordinates cross-functional review, maintains the control framework, and tracks                            remediation of findings.
