@@ -5,7 +5,6 @@ Section 1: Executive Summary
 
 Section 2: Governance Structure (RACI)
 
-Role:                    Responsibility:
-Business Ownwer          Owns the business use case for CoPilot; justifies the productivity need, sponsors the budget, and accepts residual                               business risk.
+Role: Business Owner - Responsibilty: Owns the business use case for CoPilot; justifies the productivity need, sponsors the budget, and accepts residual business risk.
 
-AI Governance Lead       Chairs overall governance oversight; coordinates cross-functional review, maintains the control framework, and tracks                            remediation of findings.
+Role: AI Governance Lead - Responsibility: Chairs overall governance oversight; coordinates cross-functional review, maintains the control framework, and tracks remediation of findings.
