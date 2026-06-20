@@ -8,3 +8,39 @@ Section 2: Governance Structure (RACI)
 Role: Business Owner - Responsibilty: Owns the business use case for CoPilot; justifies the productivity need, sponsors the budget, and accepts residual business risk.
 
 Role: AI Governance Lead - Responsibility: Chairs overall governance oversight; coordinates cross-functional review, maintains the control framework, and tracks remediation of findings.
+
+Role: Privacy (Data Protection Officer) - Responsibility: Reviews data flows for PII/customer data exposure, approves data handling practices, and oversees annual privacy impact assessments.
+
+Role: Security (CISO/Security Engineering) - Responsibility: Reviews and approves security controls, secrets management, code scanning, and prompt-injection/ MCP-related exposure. 
+
+Role: Platform Owner ( IT/ Engineering Operations) - Responsibility: Administers the GitHub Enterprise Admin Center, manages seat provisioning/deprovisioning, and maintains platform configuration.
+
+Role: Legal/ Compliance Officer: - Responsibility: Reviews regulatory applicability, ensures Data Processing Agreements are current, and signs off on AI usage policy.
+
+Role: Engineering Managers/ Tech Leads - Responsibilty: Enforce mandatory peer review of AI-generated code and supervise day-to-day responsible use within their teams.
+
+Role: Executive Leadership/ Communications - Responsibility: Owns reputational accountability and external communication in the event of an AI-related incident. 
+
+Section 3: Risk Tiering
+
+-Assigned Tier: HIGH RISK-
+
+GitHub CoPilot is classified as a high risk for the following reasons:
+
+-It processes source code, and potentially customer data, credentials, or regulated information, if it appears in code, comments, or test files, and transmits that content to external cloud infratructure for inference.
+-Its agentic workflows can autonomously plan and execute development tasks with reduced human supervision, meeting the high risk criterion.
+-Organizations in regulated industries face direct compliance exposure when regulated data passes through the platform.
+- a security failure (leaked secrets, injected vulnerable code, or a prompt-injection attack via a connected MCP/Extension) could lead to production compromise, not just an isolated productivity inconvenience.
+
+This High Risk classification does not prohibit use; it determines that CoPilot must pass through the full approval process below, with mandatory Security and Privacy review; and must remain subject to the enhanced control set defined in Sections 5 and 6, including mandatory human code review, content exclusions, and enterprise data-processing safeguards.
+
+Section 4: Approval Process 
+
+Step 1: Business Request - Business Owner submits use case, scope, and expected user population
+                                          |
+                                          |
+                                          V
+Step 2: AI Governance Review - AI Governance Lead assesses risk tier and confirms applicable controls
+                                          |
+                                          | 
+                                          V
