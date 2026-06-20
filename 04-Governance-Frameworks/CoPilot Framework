@@ -44,3 +44,27 @@ Step 2: AI Governance Review - AI Governance Lead assesses risk tier and confirm
                                           |
                                           | 
                                           V
+Step 3: Security Review - CISO/ Security Engineering evaluates secrets exposure, code scanning needs, and MCP/Extension attack surface
+                                          | 
+                                          |
+                                          V
+Step 4: Privacy Review - DPO assesses PII/customer data exposure and required data handling safeguards
+                                          |
+                                          |  
+                                          V
+Step 5: Compliance/ Legal Review - Confirms DPA is in place and regualtory applicability assessment is complete
+                                          | 
+                                          |
+                                          V
+Step 6: Approval Decision - AI Governance Lead and CISO issue formal go/no-go decision
+                                          |
+                                          | 
+                                          V
+Step 7: Monitoring - Platform Owner and IT begin ongoing usage, security, and control-effectiveness monitoring
+
+*Re-approval is required whenever GitHub introduces a material new CoPilot feature (e.g., expanded agentic autonomy), per Control COP-14, or whenever the organization's regulatory environment changes per Control COP-13.*
+
+Section 5: Control Requirements
+
+Access Controls
++
