@@ -67,4 +67,85 @@ Step 7: Monitoring - Platform Owner and IT begin ongoing usage, security, and co
 Section 5: Control Requirements
 
 Access Controls
-+
++ CoPilot Seat Assignment (COP-01)
++ Privileged Access for CoPilot Admins (COP-02)
++ CoPilot Access Revocation on Termination (COP-03)
+
+Data Controls
++ Data Sharing Opt-Out (COP-04)
++ Source Code Exclusion Policy (COP-05)
+
+Human Oversight Controls
++ AI Output Accountability Policy (COP-06)
++ Mandatory Review of AI-Generated Code (COP-07)
+
+Monitoring Controls
++ CoPilot Usage Reporting (COP-08)
++ CoPilot-Related Security Event Reporting (COP-12)
+
+Responsible AI & Third-Party Governance Controls
++ Data Processing Agreement Review (COP-09)
++ AI Bias and Output Quality Review (COP-10)
++ Developer AI Literacy Training (COP-11)
++ Regulatory Applicability Assessment (COP-13)
++ AI Feature Enablement Approval Process (COP-14)
++ User Communication for CoPilot Updates (COP-15)
+
+Section 6: Responsible AI Requirements 
+
+Human Oversight 
+* Every AI-assisted code change requires at least one human peer reviewer before it can merge into a protected branch (COP-07).
+* Developers are designated as the accountable party for any suggestion they accept, reinforced through signed policy acknowledgment (COP-06).
+* Engineering Managers and Tech Leads are expected to treat CoPilot as an accelerant to engineering judgement, not a replacement for it.
+
+Transparency
+* All developers complete AI literacy training before seat activation, covering CoPilot's capabilities and limitations (COP-11).
+* Material platform updates, new features, or policy changes are communicated to all users at least five business days in advance (COP-15).
+* An internal AI usage policy documents where and how CoPilot is used across the organization.
+
+Accountability
+* Individual developers are accountable for code they accept and commit, regardless of AI involement (COP-06).
+* Engineering Managers and Tech Leads own enforement of mandatory review within their teams.
+* The AI Governance Lead owns the overall control framework; the CEO and Executive Leadership hold ultimate reputational and organizational accountability for AI-related incidents.
+
+Fairness 
+* Quarterly sampling of CoPilot suggestions assesses bias in generated code patterns, in addition to quality and security adherence (COP-10).
+* Findings are reviewed by the AI Governance Committee, which can recommend usage restrictions or additional controls where patterns of concern emerge.
+
+Privacy
+*
+*
+*
+
+Security
+*
+*
+*
+
+Section 7: Monitoring & Roadmap
+
+Monitoring
+* User activity
+* Audit logs
+* Incidents
+* Exceptions
+* Control effectiveness
+
+Roadmap
+0-30 Days
+*
+*
+*
+*
+
+31-60 Days
+*
+*
+*
+*
+
+61-90 Days
+*
+*
+*
+*
